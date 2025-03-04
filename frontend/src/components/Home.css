@@ -1,0 +1,257 @@
+
+.home-container {
+  position: relative;
+  height: 100vh; 
+  width: 100%;
+}
+
+
+.home-background {
+  background-image: url('C:\Restaurants Recommentation\frontend\src\components\vintage-old-rustic-cutlery-dark.jpg'); /* Adjust for correct image path */
+  background-size: cover; 
+  background-position: center; 
+  height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative; 
+  flex-direction: column;
+}
+
+
+.home-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10; 
+}
+
+.logo {
+  width: 200px; 
+  height: 200px;
+}
+
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  position: absolute;
+  top: 50px; 
+  right: 20px; 
+  z-index: 10;
+}
+
+
+.home-navlink {
+  text-decoration: none; 
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  width: 250px; 
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  margin-bottom: 10px; 
+}
+
+
+.home-navlink:hover {
+   
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+  .button-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px; 
+  }
+
+  .home-navlink {
+    width: auto; 
+  }
+
+ 
+  .logo-container {
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.home-title{
+  height: 200px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  flex-direction: column;
+}
+
+.home-para{
+  margin-top: 0px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.home-search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 700px;
+}
+
+.select-district{
+  height: 50px;
+  width: 150px;
+  padding-left: 10px;
+  font-family: "Ubuntu", sans-serif;
+  color: #333;
+  font-weight: bold;
+  border-right: solid 1px #333;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search-bar-home{
+  height: 48px;
+  width: 400px;
+  padding-left: 10px;
+  font-family: "Ubuntu", sans-serif;
+  color: #333;
+  font-weight: bold;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.search-results {
+  margin-top: 20px;
+  padding: 15px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f4f1ea, #e0d8c6);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.search-result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.search-result-item:hover {
+  background: #f8f5f0;
+  transform: scale(1.02);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant-name {
+  font-size: 17px;
+  font-weight: bold;
+  color: #4a4a4a;
+  transition: color 0.3s ease;
+}
+
+.restaurant-name:hover {
+  color: #2e2e2e;
+}
+
+.view-button {
+  background: #6d4c41;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.view-button:hover {
+  background: #5d4037;
+  transform: scale(1.05);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.view-button:active {
+  transform: scale(0.98);
+}
+.no-results {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #d9534f; 
+  margin-top: 15px;
+}
+
+
